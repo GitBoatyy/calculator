@@ -19,19 +19,29 @@ h1{
     color: #fe9505;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 2px;
+    margin-bottom: 100px;
 }
-.display{
+.lastCalDisplay{
     color: white;
     text-align: right;
+    font-size: 15px;
+    height: 1vh;
+}
+.currentCalDisplay{
+    color: white;
+    text-align: right;
+    font-size: 15px;
+    height: 1vh;
 }
 
-#running{
+
+#lastCalDisplay{
     grid-column-start: 1 ;
     grid-column-end:5 ;
     grid-row-start:1 ;
     grid-row-end:2 ;
 }
-#current{
+#currentCalDisplay{
     grid-column-start:1  ;
     grid-column-end:5 ;
     grid-row-start:2 ;
@@ -62,12 +72,7 @@ h1{
     grid-row-start:3 ;
     grid-row-end:4 ;
 }
-#c{
-    grid-column-start:   ;
-    grid-column-end: ;
-    grid-row-start: ;
-    grid-row-end: ;
-}
+
   .footer {
     position: fixed;
     display: flex;
@@ -83,33 +88,56 @@ button{
     color: white;
     border-radius: 15vh;
     border: none;
-    font-size: larger;
-    
+    font-size: 2.25vh;
+    text-align: center;
+    cursor: pointer;
     
 }  
 button:hover {
     filter: brightness(125%);
   }
 
-.calc {
+.operator {
     background-color: #fe9505;
     width: 4.5vh;
     
 }
-
+.equals {
+    background-color: #fe9505;
+    width: 4.5vh;
+    
+}
+#power{
+    background-color: #a5a5a5;
+    color: black;
+}
 .clear{
     background-color: #a5a5a5;
     width: 4.5vh;
+    color: black;
+}
+.delete{
+    background-color: #a5a5a5;
+    width: 4.5vh;
+    color: black;
 }
 
 .num{
     background-color: #333333;
-    width: 4.5vh;
-    
 }
-.numz{
+#zero{
+    background-color: #333333;
+    padding-left: 1.7vh;
+    text-align: left;
+}
+.point{
     background-color: #333333;
 }
+
+img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    }
 /* {
     grid-column-start:  ;
     grid-column-end: ;
