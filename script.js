@@ -125,7 +125,9 @@ function multiply(a, b) {
 function divide(a, b) {
   return a / b
 }
-
+function power(a, b){
+  return a**b
+}
 
 
 function cal(operator, a, b) {
@@ -141,6 +143,8 @@ function cal(operator, a, b) {
     case '÷':
       if (b === 0) return null
       else return divide(a, b)
+    case 'xⁿ':
+      return power(a, b)
     default:
       return null
   }
